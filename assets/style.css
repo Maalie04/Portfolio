@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* styling my header and navbar */
+.navbar {
+    background: royalblue; /*im not sure if i want the position to be relative or fixed*/
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.con-box {
+     max-width: 1300px;
+     padding: 0 80px;
+     margin: auto;
+}
+
+.navbar .con-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .banner a{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.navbar .banner a span{
+    color: rgb(48, 44, 44);
+}
+
+.navbar .menu li a{
+    color: rgb(48, 44, 44);
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 650;
+    margin-left: 25px;
+} 
+
+.navbar .menu li a:hover{
+    color: white;
+}
+
+/* styling main section */
+.main {
+    display: flex;
+    background-image: url(Images/portfolio-background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 25px;
+    color: whitesmoke;
+    min-height: 450px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+
+.main .con-box{
+    width: 100%;
+    margin: auto 0 auto 10px;
+}
+
+.main .main-content .text-1{
+     font-size: 30px;
+     font: bolder;
+     font-weight: 800;
+     margin-left: -33px;
+     margin-top: -185px;
+     margin-bottom: 13px;
+}
+
+.main .main-content .text-2{
+    font-size: 77px;
+    margin-left: -3px;
+    display: inline;
+}
+
+.info {
+    width: 90%;
+    display: inline-block;
+    margin-left: 5%;
+   
+}
+
+.left {
+    width: 25%;
+    margin-right: 5%;
+    border-right: 3px solid black;
+    font-size: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.right{
+    margin-top: -1.75%;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.About {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: royalblue;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+   
+    
+}
+
+.right-text {
+    margin-top: 9.5px;
+}
+
+.About .right {
+    font-size: 25px;
+    text-indent: 25px;
+}
+
+.About img {
+    max-height: 200px;
+}
+
+.About h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.Work {
+    margin-bottom: 20px; 
+    padding: 50px;
+    height: 1000px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: royalblue;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.big-image {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    width: 80%;
+    flex-basis: 100%;
+}
+
+.project-row-1{
+   height: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   flex: 1 0 25%;
+   margin: 5%;
+   margin-top: 5%;
+   justify-content: center;
+   border: 1px solid black;
+ /*  align-items: center; */
+  
+   
+}
+
+.project-row-2{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 0 25%;
+    align-items: center;
+    margin: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    border: 1px solid black;
+   
+ }
+ .project-row-3{
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5%;
+    margin-top: 1%;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+    flex: 1 0 25%;
+    
+  
+    
+ }
+ .project-row-4{
+     height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5%;
+    margin-top: 1%;
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+    flex: 1 1 25%;
+    
+ }
+ 
+ 
+ 
+
+
+
+.Work img {
+    max-height: 200px;
+}
+
+.Work h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+
+
+
+.Contact {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration-line: none;
+    background-color: royalblue;
+    color: #ffffff;
+    display: flex;
+    margin-left: -1.5rem;
+}
+
+.u-list {
+    margin: 50px auto;
+}
+
+.list {
+    display: inline-block;
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px;
+    margin-top: -100px;
+}
+
+.list-1 {
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.list-2 {
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.list a {
+    color: white;
+}
+
+.Contact .right{
+    display: flex;
+    flex-direction: row;
+}
+
+.Contact img {
+    max-height: 200px;
+}
+
+.Contact h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.Contact .Contact-text li a{
+    color: rgb(48, 44, 44);
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 650;
+    margin-left: 25px;
+    text-decoration: underline;
+}
+
+/* resizing the page for various screens and devices */
+@media screen and (max-width: 991px){
+    .con-box {
+        padding: 0 50px;
+        margin: auto;
+   }
+}
+
