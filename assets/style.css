@@ -13,10 +13,6 @@
     padding: 30px;
     font-family: 'Courier New', Courier, monospace;
     flex-wrap: wrap;
-    @media screen and max-width(768px){
-        display: block;
-    }
-   
     }
 
 
@@ -36,13 +32,10 @@
 .navbar .menu li{
     list-style: none;
     display: inline-block;
-    @media screen and max-width(768px){
-        display: block;
-        flex: 1px;
     }
-}
 
-.navbar .banner a{
+
+.navbar .banner a {
     color: white;
     font-size: 40px;
     font-weight: 600;
@@ -74,20 +67,9 @@
     width: 100%;
     margin-bottom: 25px;
     color: whitesmoke;
-    min-height: 450px;
+    min-height: 400px;
     font-family: 'Courier New', Courier, monospace;
 }
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 
 .main .con-box{
     width: 100%;
@@ -106,7 +88,6 @@
 .main .main-content .text-2{
     font-size: 77px;
     margin-left: -3px;
-    display: inline;
 }
 
 .left {
@@ -141,9 +122,6 @@
     flex-direction: row;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
-    @media screen and max-width(768px){
-        display: block;
-    }
 }
 
 .right-text {
@@ -368,8 +346,65 @@
     text-decoration: underline;
 }
 
-body {
-    @media screen and max-width(768px){
+    @media screen and (max-width: 768px) {
+  body {
         display: block;
+        }
+    .navbar .banner a {
+        display: block;
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    .About .left {
+        border-style: none;
+        font-size: 20px;
+    }
+    .About .right {
+        display: block;
+        font-size: 2.5vh;
+    }
+    .navbar .menu li a {
+        display: block;
+        font-size: 10px;
+    }
+    .Work .left {
+        border-style: none;
+        font-size: 20px;
+    }
+    .Contact .left {
+        border-style: none;
+        font-size: 20px;
+    }
+    
+    .list {
+        margin: 0px;
+     }
+
+    .list-1 {
+        margin: 0px;
+     }
+
+    .list-2 {
+        margin: 0px;
+        text-align: start;
+     }
+    .main {
+        height: 00px;
+    }
+
+    .main .main-content .text-1{
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .main .main-content .text-2{
+        font-size: 25px;
+        text-align: center;
+        margin: auto auto;
+        
     }
 }
