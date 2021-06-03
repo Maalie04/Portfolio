@@ -112,6 +112,7 @@
     text-align: center;
     flex-wrap: wrap;
     flex: 1;
+    display: flex;
 }
 
 .right{
@@ -135,12 +136,10 @@
     flex-direction: row;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
-   
-    
 }
 
 .right-text {
-    margin-top: -40.5px;
+    margin-top: 10.5px;
 }
 
 .About .right {
@@ -190,6 +189,8 @@
 
 .project-row-1{
    height: 200px;
+   justify-content: center;
+   font-weight: 700;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
@@ -210,6 +211,7 @@
 }
 .project-row-2{
     height: 200px;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -231,6 +233,7 @@
 }
  .project-row-3{
     height: 200px;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -251,7 +254,8 @@
     box-shadow: 0px 0px 50px yellow;
 }
  .project-row-4{
-     height: 200px;
+    height: 200px;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -305,19 +309,22 @@
 .list a {
     color: white;
 }
-.list  a:hover{
+.list a:hover{
     color: black;
 }
 .list-1 {
+    display: inline-block;
     margin: 10px;
     text-align: center;
     text-decoration: underline;
 }
-.list-1:hover{
+.list-1 a {
+    color: white;
+}
+.list-1 a:hover{
     color: black;
 }
 .list-2 {
-    display: inline-block;
     margin: 10px;
     text-align: center;
     text-decoration: underline;
@@ -354,9 +361,17 @@
 
 /* resizing the page for various screens and devices */
 @media screen and (max-width: 991px){
-    .con-box {
+    .About {
         padding: 0 50px;
         margin: auto;
    }
+
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .About {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
 }
 
