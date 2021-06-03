@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 /* styling my header and navbar */
 .navbar {
     background: royalblue; /*im not sure if i want the position to be relative or fixed*/
@@ -11,30 +12,41 @@
     width: 100%;
     padding: 30px;
     font-family: 'Courier New', Courier, monospace;
-}
+    flex-wrap: wrap;
+    @media screen and max-width(768px){
+        display: block;
+    }
+   
+    }
+
 
 .con-box {
      max-width: 1300px;
      padding: 0 80px;
-     margin: auto;
+     display: inline;
 }
 
 .navbar .con-box{
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
+    
 }
 
 .navbar .menu li{
     list-style: none;
     display: inline-block;
-
+    @media screen and max-width(768px){
+        display: block;
+        flex: 1px;
+    }
 }
 
 .navbar .banner a{
     color: white;
     font-size: 40px;
     font-weight: 600;
+    margin-right: 20px; 
 }
 
 .navbar .banner a span{
@@ -46,8 +58,8 @@
     font-style: italic;
     font-size: 19px;
     font-weight: 650;
-    margin-left: 25px;
 } 
+
 
 .navbar .menu li a:hover{
     color: white;
@@ -97,13 +109,6 @@
     display: inline;
 }
 
-.info {
-    width: 90%;
-    display: inline-block;
-    margin-left: 5%;
-   
-}
-
 .left {
     width: 25%;
     margin-right: 5%;
@@ -111,8 +116,8 @@
     font-size: 50px;
     text-align: center;
     flex-wrap: wrap;
-    flex: 1;
     display: flex;
+    flex: 1;
 }
 
 .right{
@@ -136,6 +141,9 @@
     flex-direction: row;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+    @media screen and max-width(768px){
+        display: block;
+    }
 }
 
 .right-text {
@@ -143,6 +151,7 @@
 }
 
 .About .right {
+    display: flex;
     margin-top: -0.5px;
     font-size: 25px;
     text-indent: 25px;
@@ -359,19 +368,8 @@
     text-decoration: underline;
 }
 
-/* resizing the page for various screens and devices */
-@media screen and (max-width: 991px){
-    .About {
-        padding: 0 50px;
-        margin: auto;
-   }
-
-@media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .About {
-      flex: 0 0 50%;
-      max-width: 50%;
+body {
+    @media screen and max-width(768px){
+        display: block;
     }
-
 }
-
