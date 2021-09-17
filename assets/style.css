@@ -166,7 +166,7 @@
     flex-wrap: wrap;
     justify-content: center; 
     flex: 1 1 100%;
-    background-image: url("./Images/2021-07-20\ \(3\).png");
+    background-image: url("./Images/personal-cookbook-2.png");
     background-size: cover;
 }
 a {
@@ -190,7 +190,7 @@ a {
    flex: 1 0 25%;
    margin: 5%;
    margin-top: 5%;
-   background-image: url("./Images/2021-07-20\ \(8\).png");
+   background-image: url("./Images/2021-07-20\ \(3\).png");
    background-size: cover;
    border: 9px solid tan;
    border-style: groove;   
