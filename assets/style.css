@@ -58,6 +58,14 @@
     color: white;
 }
 
+main {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+
+
 /* styling main section */
 .main {
     display: flex;
@@ -70,6 +78,7 @@
     min-height: 400px;
     font-family: 'Courier New', Courier, monospace;
 }
+
 
 .main .con-box{
     width: 100%;
@@ -89,16 +98,111 @@
     font-size: 77px;
     margin-left: -3px;
 }
+ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.block-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: royalblue;
+}
+
+.block-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.block-title {
+    width: 100%;
+    border-right: 3px solid black;
+    /* border-bottom: 5px solid gray; */
+    text-align: left;
+    padding: 0 0 5px 0 ;
+    margin-bottom: 10px;
+}
+.primary-project {
+    border: 5px solid #0a2c6b;
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+    margin: 20px
+}
+.project-image {
+    display: block;
+    width: 100%;
+    display: inline-block;
+}
+
+.project-title {
+    display: inline;
+    background-color: #0a2c6b;
+    color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    font-size: 12px;
+    border-right: 2px solid #0a2c6b;
+    border-bottom: 2px solid #0a2c6b;
+}
+
+
+
+.secondary-left-block {
+    width: 80%;
+    height: 80%;
+    padding: 0 10px 20px 0;
+    float: none;
+    clear: both;
+}
+.secondary-right-block {
+    width: 80%;
+    padding: 0 10px 20px 0;
+    float: none;
+}
+.secondary-project {
+    border: 5px solid #0a2c6b;
+    position: relative;
+}
+
+h2.about-about{
+    color: white;
+    margin-top: 100px;
+    
+}
+
+
+h2.contact-contact{
+    color: white;
+    margin-top: 60px;
+    
+}
 
 .left {
-    width: 25%;
-    margin-right: 5%;
+    width: 14%;
+    margin-right: 20%;
     border-right: 3px solid black;
     font-size: 50px;
     text-align: center;
     flex-wrap: wrap;
     display: flex;
-    flex: 1;
+    flex-direction: row;
+}
+
+.left-contact{
+    border-right: 3px solid black;
+    font-size: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    padding: 50px;
+  
+    
 }
 
 .right{
@@ -110,18 +214,31 @@
   /*  border: 1px solid black; */
 }
 
+.right-work{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: royalblue;
+} 
+
+.left-work{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
 .About {
-    margin-bottom: 30px;
     padding: 50px;
     height: 350px;
-    font-family:  sans-serif;
+    font-family:  'Times New Roman', Times, serif;
     background-color: royalblue;
     color: #ffffff;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
 }
 
 .right-text {
@@ -145,7 +262,7 @@
 }
 
 .Work {
-    margin-bottom: 20px; 
+    /* margin-bottom: 20px; 
     padding: 50px;
     height: 1000px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -153,7 +270,31 @@
     color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
+}
+
+.card {
+    width: 350px;
+}
+
+.card-body {
+    width: 350px;
+    margin-left: 100px;
+}
+
+img  {
+    font-size: 25px;
+    color: black;
+    height: 300px;
+    border: 9px solid tan;
+    border-style: groove;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    background-image: url("./Images/personal-cookbook-2.png");
+    background-size: cover;
+    margin-left: 100px;
+   
 }
 
 .big-image {
@@ -174,11 +315,78 @@ a {
     color:black;
 }
 
-button {
-    height: 20px;
-    font-size: 15px;
-    margin-left: -380px;
+h2{
+    color: royalblue;
 }
+
+button.primary-link {
+    height: 20px;
+    width: 60px;
+    font-size: 15px;
+    margin-left: -590px;
+    border-radius: 5px;
+}
+
+button.primary-link:hover{
+    color: royalblue;
+    border: gold;
+}
+
+button.row-1 {
+    height: 20px;
+    width: 60px;
+    font-size: 15px;
+    margin-left: -260px;
+    border-radius: 5px;
+}
+
+
+button.row-1:hover{
+    color: royalblue;
+    border: gold;
+}
+
+button.row-2 {
+    margin-left: -230px;
+    height: 20px;
+    width: 60px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button.row-2:hover{
+    color: royalblue;
+    border: gold;
+}
+
+button.row-3 {
+    height: 20px;
+    width: 60px;
+    font-size: 15px;
+    margin-left: -240px;
+    border-radius: 5px;
+}
+
+button.row-3:hover{
+    color: royalblue;
+    border: gold;
+}
+
+
+button.row-4 {
+    margin-left: -240px;
+    height: 20px;
+    width: 60px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button.row-4:hover {
+    color: royalblue;
+    border: gold;
+}
+
+
 .big-image:hover {
     color: black;
     box-shadow: black;
@@ -188,16 +396,16 @@ button {
 
 .project-row-1{
    color: black;
-   height: 200px;
+   height: 300px;
    justify-content: center;
    font-weight: 700;
    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
-   flex: 1 0 25%;
+   flex: 1 0 30%;
    margin: 5%;
    margin-top: 5%;
-   background-image: url("./Images/2021-07-20\ \(3\).png");
+   background-image: url("./Images/capitolProperties.png");
    background-size: cover;
    border: 9px solid tan;
    border-style: groove;   
@@ -206,9 +414,8 @@ button {
 color: black;
 }
 
-.row-1 {
-    margin-left: -145px;
-}
+
+
 
 .project-row-1:hover {
     color: red;
@@ -217,7 +424,7 @@ color: black;
     box-shadow: 0px 0px 50px yellow;
 }
 .project-row-2{
-    height: 200px;
+    height: 300px;
     font-weight: 700;
     display: flex;
     flex-wrap: wrap;
@@ -228,7 +435,7 @@ color: black;
     justify-content: center;
     border: 9px solid tan;
     border-style: groove;
-    background-image: url("./Images/2021-08-10\ \(29\).png");
+    background-image: url("./Images/weatherDashboard.png");
     background-size: cover;
  }
  
@@ -239,7 +446,7 @@ color: black;
     box-shadow: 0px 0px 50px yellow;
 }
  .project-row-3{
-    height: 200px;
+    height: 300px;
     font-weight: 700;
     display: flex;
     flex-wrap: wrap;
@@ -249,7 +456,7 @@ color: black;
     justify-content: center;
     border: 9px solid tan;
     border-style: groove;
-    background-image: url("./Images/2021-07-20\ \(28\).png");
+    background-image: url("./Images/noteTaker.png");
     background-size: cover;
     flex: 1 0 25%;
  }
@@ -261,7 +468,7 @@ color: black;
     box-shadow: 0px 0px 50px yellow;
 }
  .project-row-4{
-    height: 200px;
+    height: 300px;
     font-weight: 700;
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +479,7 @@ color: black;
     align-items: flex-start;
     border: 9px solid tan;
     border-style: groove;
-    background-image: url("Images/2021-07-20\ \(29\).png");
+    background-image: url("Images/workScheduler.png");
     background-size: contain;
     flex: 1 0 25%;  
  }
