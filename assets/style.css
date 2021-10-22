@@ -1,7 +1,382 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+    height: 100%;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 15px;
+}
+
+span {
+    line-height: 1.2em;
+}
+
+/* header section */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 20px 10px;
+    color: #ccc;
+    background: url("./Images/profile-image.jpg") no-repeat left top;
+    background-size: 100px;
+    background-color: #0a2c6b;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.banner {
+    color: darkgrey;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 150px; 
+    letter-spacing: 1.5px;
+}
+
+.banner a {
+    color: lightgray;
+}
+
+.banner span{
+    color: black;
+}
+
+main{
+    /* background: url(./Images/portfolio-image.jpg);
+    height: 100vh;
+    width:100vh;
+    background-size: 100vh; */
+}
+
+/* styling main section */
+.main {
+    display: flex;
+    background-image: url(Images/portfolio-background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 25px;
+    color: lightgray;
+    min-height: 485px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div .text-1{
+    font-size: 30px;
+    font: bolder;
+    font-weight: 800;
+    margin-left: 53px;
+    margin-top: 55px; 
+    margin-bottom: 13px;
+    color: lightgray;
+    text-shadow: black; 
+}
+
+.main .main-content .text-2{
+   font-size: 77px;
+   margin-left: 63px;
+   color: lightgray;
+}
+
+/* navigation bar */
+nav {
+    display: flex;
+    flex: 1 1 40%;
+    justify-content: center;
+    padding-top: 12px;
+    padding-left: 100px;
+    font-size: 14px;
+    color: lightgray;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* link formatting */
+a {
+    color: lightgray;
     text-decoration: none;
 }
 
+a:hover {
+    color: cornflowerblue;
+}
+
+/* space out paragraphs */
+p {
+    margin-bottom: 10px;
+}
+
+/* sets the width, display type, and padding for the main content */
+main {
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+/* formatting for the about me, work, and contact me sections */
+.block-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.block-title {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 5px solid gray;
+    text-align: left;
+    padding: 0 0 5px 0 ;
+    margin-bottom: 10px;
+}
+
+.block-title h2 {
+    font-size: 18px;
+}
+
+.block-content {
+    width: 100%;
+    padding-left: 0;
+}
+
+/* formatting for the most recent project */
+.primary-project {
+    border: 5px solid #0a2c6b;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* formatting for the remaining projects */
+.secondary-left-block {
+    width: 80%;
+    height: 80%;
+    padding: 0 10px 20px 0;
+    float: none;
+    clear: both;
+}
+
+.secondary-right-block {
+    width: 80%;
+    padding: 0 10px 20px 0;
+    float: none;
+}
+
+.secondary-project {
+    border: 5px solid #0a2c6b;
+    position: relative;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    transition: opacity 300ms linear;
+}
+
+.project-image:hover {
+    opacity: 1.0;
+}
+
+/* title bar that appears on each project */
+.project-title {
+    display: inline;
+    background-color: #0a2c6b;
+    color: #ccc;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    font-size: 12px;
+    border-right: 2px solid #0a2c6b;
+    border-bottom: 2px solid #0a2c6b;
+}
+
+.project-image:hover ~ .project-title {
+    opacity: 1.0;
+}
+
+.project-title h3 {
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+
+.project-title a {
+    display:block;
+    color:white;
+    padding:10px;
+}
+
+.project-title .project-link:hover {
+    color: cornflowerblue;
+}
+
+.image-link:hover + .project-title .project-link {
+    color: cornflowerblue;
+}
+
+.project-title .git {
+    color: #0a2c6b;
+    padding: 5px 10px;
+    background-color: gray;
+}
+
+.project-title .git:hover {
+    color: lightskyblue;
+}
+
+/* contact me section */
+.contact-info {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-info span {
+    padding-bottom: 1px;
+    border-bottom: 3px solid gray;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration-color: gray;
+}
+
+.contact-info a:hover {
+    color: blue;
+}
+
+/* sets the footer formatting */
+footer {
+    padding: 10px 0 30px 0;
+    clear: both;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+    /* reduce header elements to fit */
+    header {
+        flex-direction: column;
+        padding: 12px 10px;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+    
+    nav {
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* reposition elements to best use available space */
+    .block-title {
+        width: 20%;
+        border-right: 5px solid gray;
+        border-bottom: 0;
+        text-align: right;
+        padding: 0 10px 0 0 ;
+    }
+
+    .block-content {
+        width: 80%;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* stack header elements */
+    header {
+        flex-direction: row;
+        height: 100px;
+        padding: 28px 10px;
+    }
+
+    header h1 {
+        display: inline-block;
+        padding-left: 100px;
+    }
+
+    nav {
+        justify-content: flex-end;
+        padding-top: 12px;
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* reduce spacing between elements */
+    .block-title {
+        padding: 0 20px 0 0 ;
+    }
+    
+    .block-content {
+        padding-left: 30px;
+    }
+
+    .block-title h2 {
+        font-size: 28px;
+    }
+
+    /* stack projects */
+    .secondary-left-block {
+        width: 50%;
+        padding: 0 10px 20px 0;
+        float: left;
+    }
+    
+    .secondary-right-block {
+        width: 50%;
+        padding: 0 0 20px 10px;
+        float: right;
+    }
+    
+    .project-title {
+        font-size: 16px;
+    }
+
+    .project-title h3 {
+        font-size: 20px;
+    }
+
+    /* stack contact methods */
+    .contact-info {
+        display: inline;
+    }
+
+    .contact-info:not(:last-child) {
+        padding-right: 18px;
+    }
+}
