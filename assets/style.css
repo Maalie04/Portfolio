@@ -32,7 +32,7 @@ header {
     height: 100px;
     padding: 20px 10px;
     color: whitesmoke;
-    background: url("./Images/profile-image.jpg") no-repeat left top;
+    background: url("./images/profile-image.jpg") no-repeat left top;
     background-size: 100px;
     background-color: #0a2c6b;
 }
@@ -60,17 +60,10 @@ header h1 {
     color: black;
 }
 
-main{
-    /* background: url(./Images/portfolio-image.jpg);
-    height: 100vh;
-    width:100vh;
-    background-size: 100vh; */
-}
-
 /* styling main section */
 .main {
     display: flex;
-    background-image: url(Images/portfolio-background.jpg);
+    background-image: url(images/portfolio-background.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;

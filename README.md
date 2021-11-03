@@ -3,9 +3,9 @@ This app is a responsive Portfolio that has visible applications. In this projec
 
 ## Applications
 
-![alt image](./assets/Images/personal-cookbook-2.png)
-![alt image](./assets/Images/capitolProperties.png)
-![alt image](./assets/Images/noteTaker.png)
-![alt image](./assets/Images/passwordGenerator.png)
-![alt image](./assets/Images/weatherDashboard.png)
-![alt image](./assets/Images/workScheduler.png)
+![alt image](./assets/images/personal-cookbook-2.png)
+![alt image](./assets/images/capitolProperties.png)
+![alt image](./assets/images/noteTaker.png)
+![alt image](./assets/images/passwordGenerator.png)
+![alt image](./assets/images/weatherDashboard.png)
+![alt image](./assets/images/workScheduler.png)
